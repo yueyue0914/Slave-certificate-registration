@@ -1,0 +1,9 @@
+certificates
+CREATE TABLE certificates (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(30) NOT NULL,
+  gender VARCHAR(10) NOT NULL,
+  role VARCHAR(10) NOT NULL,
+  certificate_number VARCHAR(16) NOT NULL,
+  barcode_image MEDIUMBLOB
+)

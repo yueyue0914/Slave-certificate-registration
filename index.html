@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>证书生成器</title>
+	<meta charset="utf-8">
+	<script src="JsBarcode.all.min.js"></script>
+</head>
+<body>
+	<div>
+		<label for="name">姓名：</label>
+		<input type="text" id="name" name="name"><br><br>
+		
+		<label for="gender">性别：</label>
+		<select id="gender" name="gender">
+			<option value="男">男</option>
+			<option value="女">女</option>
+		</select><br><br>
+
+		<label for="role">身份：</label>
+		<input type="radio" id="master" name="role" value="主人">
+		<label for="master">主人</label>
+		<input type="radio" id="slave" name="role" value="奴隶">
+		<label for="slave">奴隶</label><br><br>
+
+		<button onclick="generateCertificate()">生成证书</button>
+	</div>
+
+	<script src="generate-certificate.js"></script>
+</body>
+</html>
